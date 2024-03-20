@@ -1,0 +1,268 @@
+{
+    "SWADEItemTables": {
+        "Title": "SWADE Item Tables",
+        "ItemsList": {
+            "Title": "Item Tables",
+            "Name": "Configure Items to Include",
+            "Label": "Select Items",
+            "Hint": "Select which Items you want to use in your campaign."
+        },
+        "HideSystem": {
+            "Name": "Hide System Items",
+            "Hint": "Hides Items for the SWADE System Compendia"
+        },
+        "HideCraftingTable": {
+            "Name": "Hide Crafting Table Button",
+            "Hint": "Prevents the button for opening the Crafting Table from appearing in the Items Directory in the Sidebar."
+        },
+        "SeparateBySource": {
+            "Name": "Separate Items by Source",
+            "Hint": "Separates in the tables Items by their source modules."
+        },
+        "HideUnobtainable": {
+            "Name": "Hide Unobtainable Items",
+            "Hint": "Hides in the tables Items for which the given Character does not qualify or cannot afford."
+        },
+        "SuppressCharacterSheetRender": {
+            "Name": "Suppress Rendering Character Sheet for New Characters",
+            "Hint": "When a new Character is created from the Actor Sidebar, the Character Sheet will no longer render automatically."
+        },
+        "HideItemCompendia": {
+            "Name": "Hide Item Compendia",
+            "Hint": "Hides Item Compendia from non-GMs to require browsing for items via the Item Tables app."
+        },
+        "BornAHero": {
+            "Name": "Born a Hero",
+            "Hint": "Checking this will enable the Born a Hero setting rule."
+        },
+        "MoreSkillPoints": {
+            "Name": "More Skill Points",
+            "Hint": "Checking this will enable the More Skill Points setting rule."
+        },
+        "LargerThanLife": {
+            "Name": "Larger Than Life",
+            "Hint": "Checking this will enable the Larger Than Life setting rule from the Super Powers Companion."
+        },
+        "FreeEdge": {
+            "Name": "Free Starting Edge",
+            "Hint": "Checking this will allow all new characters to start with a free Edge."
+        },
+        "IncludedItemsConfiguration": {
+            "Title": "Included Items Configuration",
+            "Pretext": "Right-click on an Item's name to open its sheet."
+        },
+        "CharacterCreator": {
+            "Title": "Create Character",
+            "CreateCharacter": "Edit Character Build",
+            "Concept": "Concept",
+            "Points": "Points",
+            "AdjustAttributePoints": {
+                "Label": "Adjust attribute points",
+                "Tooltip": "Change the character's max available attribute points based on Hindrances, Complications, et al (e.g., Young)"
+            },
+            "AdjustSkillPoints": {
+                "Label": "Adjust skill points",
+                "Tooltip": "Change the character's max available skill points based on Hindrances, Complications, et al (e.g., Young)"
+            },
+            "Slots": "Slots",
+            "AddAncestry": "You must first either drop an ancestry ability Item below or enter a name for a custom ancestry for your new character before continuing.",
+            "AddArchetype": "Some settings such as RIFTS for Savage Worlds use \"Archetypes\" (e.g., Iconic Frameworks, Packages, et al). If this World makes use of archetype Items, add the character's archetype by dropping it here.",
+            "AddSkillsInstructions": "Add skills by dropping them into the table below. You can also add them by specific die type.",
+            "AddEdgesInstructions": "Add Edges by dropping them into the table below.",
+            "AddHindrances": "Add Hindrances by dragging and dropping them onto the table below. If a Hindrance has both Major and Minor options, drag the Hindrance by the desired severity type from the Item Tables.",
+            "Change": "Change",
+            "Delete": "Remove",
+            "HasAdaptable": "Has Adaptable Ability",
+            "Hindrance": {
+                "Edit": "Edit Hindrance",
+                "SpendPoints": "Spend Points",
+                "PointsOption": "Apply Points to",
+                "SelectOption": "-- Select an option --",
+                "RaiseAttribute": "Raise an attribute one die type",
+                "ChooseEdge": "Choose an Edge",
+                "GainSkillPoint": "Gain a skill point",
+                "GainStartingFunds": "Gain 2x starting funds",
+                "DeletePointSelect": "Remove Hindrance Points Selection",
+                "LargerThanLife": {
+                    "DropZone": {
+                        "Heading": "Larger Than Life",
+                        "Description": "Drag and drop your choice of a Major Hindrance for the Larger Than Life Setting Rule."
+                    }
+                }
+            }
+        },
+        "CharacterAdvances": {
+            "Title": "Advances",
+            "AdvanceWildCard": "Advance Wild Card",
+            "AdvanceExtra": "Advance Extra",
+            "IncreaseAttribute": "Increase Attribute",
+            "IncreasedAttribute": "Increase {attribute}"
+        },
+        "CraftingTable": {
+            "Title": "Crafting Table",
+            "Instructions": "Drop an Item into this window to automatically create a masterwork copy of it. Select a bonus to enchant it.",
+            "Bonus": {
+                "Label": "Bonus",
+                "SelectABonus": "--Select a Bonus--",
+                "PlusOneArmor": "Armor +1",
+                "PlusTwoArmor": "Armor +2",
+                "PlusTwoArmorMinStr": "+2 and Min Str decreases one die type",
+                "PlusOneParry": "+1 Parry",
+                "PlusOneParryMinStr": "+1 Parry and Min Str decreased by one",
+                "PlusOneFighting": "+1 Fighting",
+                "PlusTwoFighting": "+2 Fighting",
+                "PlusTwoFightingDamageDie": "+2 Fighting and damage die increases one step",
+                "PlusOneAthletics": "+1 Athletics",
+                "PlusTwoAthletics": "+2 Athletics",
+                "PlusTwoAthleticsDamageDie": "+2 Athletics and damage die increases one step",
+                "PlusOneShooting": "+1 Shooting",
+                "PlusTwoShooting": "+2 Shooting",
+                "PlusTwoShootingDamageDie": "+2 Shooting and damage die increases one step"
+            }
+        },
+        "ArcaneSkillSelector": {
+            "Title": "Arcane Skill Selector",
+            "Text": "If {name} requires an arcane skill to activate powers, please select the appropriate skill below. Otherwise, you may click Cancel to skip this step.",
+            "SelectLabel": "Arcane Skill",
+            "Refresh": "Refresh list of character's skills",
+            "Refreshed": "SWADE Item Tables: Skills list refreshed."
+        },
+        "ArcaneBackgroundSelector": {
+            "Title": "Arcane Background Selector",
+            "Text": "Select an Arcane Background for the {name} power",
+            "SelectLabel": "Arcane Background",
+            "Refresh": "Refresh list of character's Arcane Backgrounds",
+            "Refreshed": "SWADE Item Tables: Arcane Backgrounds list refreshed."
+        },
+        "Keybinding": {
+            "ShowTables": {
+                "Name": "Open Item Tables",
+                "Hint": "Renders the Item Tables."
+            }
+        },
+        "Configuration": {
+            "Import": "Import Configuration",
+            "Export": "Export Configuration"
+        },
+        "ImportSettings": {
+            "Title": "Import Configuration",
+            "Content": "<p>Are you sure you want to overwrite the current configuration with the file's contents?</p>"
+        },
+        "AdvanceCharacter": {
+            "Type": "Type",
+            "AddAdvance": "Add an advance by dropping a skill, Edge, or Hindrance below, or increase an Attribute on the character's sheet.",
+            "Hindrance": {
+                "Reduced": "Reduced {name}.",
+                "Removed": "Removed {name}.",
+                "Saved": "Saved advance to remove {name}."
+            },
+            "Skill": {
+                "Added": "Gained the {name} skill.",
+                "Increased": "Increased {name} by one die type.",
+                "IncreasedTwoSkills": "Increased {name} and {name2} by one die type each."
+            },
+            "Edge": "Gained the {name} Edge."
+        },
+        "PopUp": {
+            "NoDescription": "No description provided."
+        },
+        "Notifications": {
+            "SettingsImport": {
+                "Success": "SWADE Item Tables: Settings have been successfully imported.",
+                "Fail": "SWADE Item Tables: File is not a valid settings export.",
+                "IncorrectFileType": "SWADE Item Tables: File must be a plain text file."
+            },
+            "AddAncestry": "SWADE Item Tables: {name} must be given an ancestry first.",
+            "DoesNotHaveHindrance": "SWADE Item Tables: {name} does not have this Hindrance.",
+            "ExistingSkillUpdated": "SWADE Item Tables: Existing Skill Updated.",
+            "FlagsMigrated": "SWADE Item Tables: Flags successfully migrated.",
+            "NoAttributePointsAvailable": "SWADE Item Tables: {name} does not have any attribute points available.",
+            "NoSkillPointsAvailable": "SWADE Item Tables: {name} does not have any skill points available.",
+            "NoEdgeSlotsAvailable": "SWADE Item Tables: {name} does not have any Edge slots available.",
+            "CannotUpgradeSameSkill": "SWADE Item Tables: You cannot update the same skill twice in a single advance.",
+            "CannotIncreaseSkill": "SWADE Item Tables: You've already added or increased a skill below its linked attribute. You cannot increase a skill beyond its linked attribute for this advance.",
+            "AlreadyHasEdge": "SWADE Item Tables: {name} already has the {edgeName} Edge.",
+            "NoItem": "SWADE Item Tables: There currently is no Item on the crafting table.",
+            "InvalidItemType": "SWADE Item Tables: The Item must be some form of physical Item such as ammunition, armor, shield, or weapon.",
+            "EdgeRequirementsNotMet": "SWADE Item Tables: {name} does not meet the requirements to take this Edge.",
+            "NoAdvanceData": "SWADE Item Tables: Advance {action}, but character changes were not tracked for this advance.",
+            "LargerThanLifeMajorHindranceRequired": "SWADE Item Tables: The Larger Than Life Setting Rule requires a Major Hindrance."
+        },
+        "Ranks": {
+            "Novice": "Novice",
+            "Seasoned": "Seasoned",
+            "Veteran": "Veteran",
+            "Heroic": "Heroic",
+            "Legendary": "Legendary"
+        },
+        "PackLabel": "Compendium Name",
+        "Character": "Character",
+        "WildCard": "Wild Card",
+        "Concept": "Concept",
+        "Biography": "Biography",
+        "Ability": "Ability",
+        "Abilities": "Abilities",
+        "AttrAgi": "Agility",
+        "AttrSma": "Smarts",
+        "AttrSpr": "Spirit",
+        "AttrStr": "Strength",
+        "AttrVig": "Vigor",
+        "Item": "Item",
+        "Type": "Type",
+        "Trait": "Trait",
+        "Traits": "Traits",
+        "Attribute": "Attribute",
+        "Attributes": "Attributes",
+        "Skill": "Skill",
+        "Skills": "Skills",
+        "DieSides": "Die Sides",
+        "LinkedAttribute": "Linked Attribute",
+        "Ancestry": "Ancestry",
+        "Ancestries": "Ancestries",
+        "Archetype": "Archetype",
+        "Archetypes": "Archetypes",
+        "Hindrance": "Hindrance",
+        "Hindrances": "Hindrances",
+        "Major": "Major",
+        "Minor": "Minor",
+        "Edge": "Edge",
+        "Edges": "Edges",
+        "Requirements": "Requirements",
+        "Power": "Power",
+        "Powers": "Powers",
+        "Rank": "Rank",
+        "Category": "Category",
+        "Equipment": "Equipment",
+        "Gear": "Gear",
+        "Armor": "Armor",
+        "Shields": "Shields",
+        "MeleeWeapons": "Melee Weapons",
+        "RangedWeapons": "Ranged Weapons",
+        "Price": "Price",
+        "Weight": "Weight",
+        "Notes": "Notes",
+        "AP": "AP",
+        "Parry": "Parry",
+        "Damage": "Damage",
+        "MinStr": "Min Str.",
+        "Range": "Range",
+        "RoF": "RoF",
+        "SearchPlaceholder": "Filter Items...",
+        "AddItemsToActor": "Add Items to Actor",
+        "Advance": "Advance",
+        "Advances": "Advances",
+        "DieTypes": "Die Types",
+        "BackToTop": "Back to Top",
+        "Creating": "Creating",
+        "ItemGrants": "Item Grants",
+        "Summary": "Summary",
+        "Delete": "Remove",
+        "Toggle": "Toggle",
+        "Open": "Open",
+        "Cancel": "Cancel",
+        "Submit": "Submit",
+        "Fighting": "Fighting",
+        "Shooting": "Shooting",
+        "Athletics": "Athletics"
+    }
+}

@@ -1,0 +1,268 @@
+{
+    "SWADEItemTables": {
+        "Title": "SWADE Item Tables",
+        "ItemsList": {
+            "Title": "Itemtabellen",
+            "Name": "Genutzte Items festlegen",
+            "Label": "Items wählen",
+            "Hint": "Wählen, welche Items in der Kampagne genutzt werden sollen."
+        },
+        "HideSystem": {
+            "Name": "System-Items verstecken",
+            "Hint": "Versteckt Items aus den SWADE System-Kompendien"
+        },
+        "HideCraftingTable": {
+            "Name": "Werkbank-Button verstecken",
+            "Hint": "Verhindert, dass der Button für die Werkbank im Item-Reiter der Seitenleiste auftaucht."
+        },
+        "SeparateBySource": {
+            "Name": "Items nach Quelle trennen",
+            "Hint": "Listet Items in den Tabellen nach Quell-Modul getrennt auf."
+        },
+        "HideUnobtainable": {
+            "Name": "Unerreichbare Items verstecken",
+            "Hint": "Verbirgt Items in den Tabellen, deren Voraussetzungen oder Kosten der Charakter nicht leisten kann."
+        },
+        "SuppressCharacterSheetRender": {
+            "Name": "Charakterbogen für neue Charaktere unterdrücken",
+            "Hint": "Wenn ein neuer Charakter über die Akteur-Seitenleiste angelegt wird, wird nicht mehr automatisch der Charakterbogen geöffnet."
+        },
+        "HideItemCompendia": {
+            "Name": "Item-Kompendien verstecken",
+            "Hint": "Versteckt Item-Kompendien (außer für die SL), um die Nutzung der Itemtabellen-App zu erzwingen."
+        },
+        "BornAHero": {
+            "Name": "Geborener Held",
+            "Hint": "Schaltet die Settingregel Geborener Held ein, wenn aktiviert."
+        },
+        "MoreSkillPoints": {
+            "Name": "Mehr Fertigkeitspunkte",
+            "Hint": "Schaltet die Settingregel Mehr Fertigkeitspunkte ein, wenn aktiviert"
+        },
+        "LargerThanLife": {
+            "Name": "Überlebensgroß",
+            "Hint": "Schaltet die Settingregel Überlebensgroß aus dem Superkräfte-Kompendium ein, wenn aktiviert."
+        },
+        "FreeEdge": {
+            "Name": "Freies Starttalent",
+            "Hint": "Wenn aktiviert, starten alle neuen Charakter mit einem zusätzlichen freien Talent."
+        },
+        "IncludedItemsConfiguration": {
+            "Title": "Konfiguration genutzter Items",
+            "Pretext": "Rechtsklick auf Itemnamen, um dessen Bogen zu öffnen."
+        },
+        "CharacterCreator": {
+            "Title": "Charakter erstellen",
+            "CreateCharacter": "Charakter bearbeiten",
+            "Concept": "Konzept",
+            "Points": "Punkte",
+            "AdjustAttributePoints": {
+                "Label": "Attributpunkte anpassen",
+                "Tooltip": "Maximale Attributpunkte entsprechend Handicaps (wie Alt) etc. anpassen"
+            },
+            "AdjustSkillPoints": {
+                "Label": "Fertigkeitspunkte anpassen",
+                "Tooltip": "Maximale Fertigkeitspunkte entsprechend Handicaps (wie Jung) etc. anpassen"
+            },
+            "Slots": "Plätze",
+            "AddAncestry": "Vor dem Fortfahren Volk-Item unten reinziehen oder für eigenes Volk Volksnamen im Charakterbogen eingeben.",
+            "AddArchetype": "Manche Settings (wie RIFTS for Savage Worlds) nutzen \"Archetypen\". Wenn diese Welt Archetypen nutzt, Archetyp-Item unten reinziehen.",
+            "AddSkillsInstructions": "Fertigkeiten in die Tabelle unten ziehen. Fertigkeiten können auch direkt per Würfeltyp gezogen werden.",
+            "AddEdgesInstructions": "Talente in die Tabelle unten ziehen.",
+            "AddHindrances": "Handicaps in die Tabelle unten ziehen. Falls ein Handicap Leicht oder Schwer sein kann, am gewünschten Schweregrad aus der Tabelle reinziehen.",
+            "Change": "Ändern",
+            "Delete": "Entfernen",
+            "HasAdaptable": "Hat Volksfähigkeit Anpassungsfähig",
+            "Hindrance": {
+                "Edit": "Handicap bearbeiten",
+                "SpendPoints": "Punkte ausgeben",
+                "PointsOption": "Punkte ausgeben:",
+                "SelectOption": "-- Option wählen --",
+                "RaiseAttribute": "Attribut um einen Würfeltyp steigern",
+                "ChooseEdge": "Talent wählen",
+                "GainSkillPoint": "Fertigkeitspunkt erhalten",
+                "GainStartingFunds": "Doppeltes Startkapital",
+                "DeletePointSelect": "Handicap-Punkte-Selektion entfernen",
+                "LargerThanLife": {
+                    "DropZone": {
+                        "Heading": "Überlebensgroß",
+                        "Description": "Schweres Handicap der Wahl für Settingregel Überlebensgroß herziehen."
+                    }
+                }
+            }
+        },
+        "CharacterAdvances": {
+            "Title": "Aufstiege",
+            "AdvanceWildCard": "Wildcard-Aufstieg",
+            "AdvanceExtra": "Statist-Aufstieg",
+            "IncreaseAttribute": "Attribut steigern",
+            "IncreasedAttribute": "{attribute} steigern"
+        },
+        "CraftingTable": {
+            "Title": "Werkbank",
+            "Instructions": "Item in dieses Fenster ziehen, um automatisch eine Meisterwerk-Kopie anzulegen. Bonus wählen, um es zu verzaubern.",
+            "Bonus": {
+                "Label": "Bonus",
+                "SelectABonus": "-- Bonus wählen --",
+                "PlusOneArmor": "Rüstung +1",
+                "PlusTwoArmor": "Rüstung +2",
+                "PlusTwoArmorMinStr": "+2 und Min Stä um 1 Würfeltyp gesenkt",
+                "PlusOneParry": "+1 Parade",
+                "PlusOneParryMinStr": "+1 Parade und Min Stä um 1 Würfeltyp gesenkt",
+                "PlusOneFighting": "+1 Kämpfen",
+                "PlusTwoFighting": "+2 Kämpfen",
+                "PlusTwoFightingDamageDie": "+2 Kämpfen und Schadenswürfeltyp um eins gesteigert",
+                "PlusOneAthletics": "+1 Athletik",
+                "PlusTwoAthletics": "+2 Athletik",
+                "PlusTwoAthleticsDamageDie": "+2 Athletik und Schadenswürfeltyp um eins gesteigert",
+                "PlusOneShooting": "+1 Schießen",
+                "PlusTwoShooting": "+2 Schießen",
+                "PlusTwoShootingDamageDie": "+2 Schießen und Schadenswürfeltyp um eins gesteigert"
+            }
+        },
+        "ArcaneSkillSelector": {
+            "Title": "Arkane Fertigkeit wählen",
+            "Text": "Falls {name} eine Arkane Fertigkeit zum Aktivieren von Mächten verlangt, bitte unten die nötige Fertigkeit wähhlen. Ansonsten Abbrechen klicken.",
+            "SelectLabel": "Arkane Fertigkeit",
+            "Refresh": "Fertigkeitsliste aktualisieren",
+            "Refreshed": "SWADE Item Tables: Fertigkeitsliste aktualisiert."
+        },
+        "ArcaneBackgroundSelector": {
+            "Title": "Arkanen Hintergrund wählen",
+            "Text": "Arkanen Hintergrund für Macht {name} wählen",
+            "SelectLabel": "Arkaner Hintergrund",
+            "Refresh": "Liste Arkaner Hintergründe des Charakters aktualisieren",
+            "Refreshed": "SWADE Item Tables: Liste Arkaner Hintergründe aktualisiert."
+        },
+        "Keybinding": {
+            "ShowTables": {
+                "Name": "Itemtabellen öffnen",
+                "Hint": "Zeigt die Itemtabellen."
+            }
+        },
+        "Configuration": {
+            "Import": "Konfiguration importieren",
+            "Export": "Konfiguration exportieren"
+        },
+        "ImportSettings": {
+            "Title": "Konfiguration importieren",
+            "Content": "<p>Sicher, dass die aktuelle Konfiguration mit dem Inhalt der Datei überschrieben werden soll?</p>"
+        },
+        "AdvanceCharacter": {
+            "Type": "Typ",
+            "AddAdvance": "Aufstieg hinzufügen: Fertigkeit, Talent oder Handicap unten hinziehen, oder Attribut im Charakterbogen steigern.",
+            "Hindrance": {
+                "Reduced": "{name} reduziert.",
+                "Removed": "{name} entfernt.",
+                "Saved": "Aufstieg zum Entfernen von {name} gespeichert."
+            },
+            "Skill": {
+                "Added": "Fertigkeit {name} erlangt.",
+                "Increased": "{name} um einen Würfeltyp gesteigert.",
+                "IncreasedTwoSkills": "{name} und {name2} um je einen Würfeltyp gesteigert."
+            },
+            "Edge": "Talent {name} erlangt."
+        },
+        "PopUp": {
+            "NoDescription": "Keine Beschreibung verfügbar."
+        },
+        "Notifications": {
+            "SettingsImport": {
+                "Success": "SWADE Item Tables: Einstellungen erfolgreich importiert.",
+                "Fail": "SWADE Item Tables: Datei ist kein gültiger Einstellungsexport.",
+                "IncorrectFileType": "SWADE Item Tables: Datei muss eine Plaintext-Datei sein."
+            },
+            "AddAncestry": "SWADE Item Tables: {name} muss zuerst ein Volk erhalten.",
+            "DoesNotHaveHindrance": "SWADE Item Tables: {name} verfügt nicht über dieses Handicap.",
+            "ExistingSkillUpdated": "SWADE Item Tables: Existierende Fertigkeit aktualisiert.",
+            "FlagsMigrated": "SWADE Item Tables: Flags erfolgreich migriert.",
+            "NoAttributePointsAvailable": "SWADE Item Tables: {name} verfügt über keine Attributpunkte.",
+            "NoSkillPointsAvailable": "SWADE Item Tables: {name} verfügt über keine Fertigkeitspunkte.",
+            "NoEdgeSlotsAvailable": "SWADE Item Tables: {name} verfügt über keine Talentplätze.",
+            "CannotUpgradeSameSkill": "SWADE Item Tables: Eine Fertigkeit kann nicht mehrfach in einem Aufstieg gesteigert werden.",
+            "CannotIncreaseSkill": "SWADE Item Tables: Fertigkeit bereits bis zum verbundene Attribut hinzugefügt oder erhöht. Fertigkeit kann für diesen Aufstieg nicht darüber hinaus gesteigert werden.",
+            "AlreadyHasEdge": "SWADE Item Tables: {name} hat das Talent {edgeName} bereits.",
+            "NoItem": "SWADE Item Tables: Kein Item in der Werkbank.",
+            "InvalidItemType": "SWADE Item Tables: Item muss ein physischer Gegenstand (wie Munition, Rüstung, Schild oder Waffe) sein.",
+            "EdgeRequirementsNotMet": "SWADE Item Tables: {name} erfüllt die Voraussetzungen für dieses Talent nicht.",
+            "NoAdvanceData": "SWADE Item Tables: Aufstieg: {action}, aber die Charakteränderungen wurden für diesen Aufstieg nicht festgehalten.",
+            "LargerThanLifeMajorHindranceRequired": "SWADE Item Tables: Die Settingregel Überlebensgroß verlangt ein Schweres Handicap."
+        },
+        "Ranks": {
+            "Novice": "Anfänger",
+            "Seasoned": "Fortgeschritten",
+            "Veteran": "Veteran",
+            "Heroic": "Heroisch",
+            "Legendary": "Legendär"
+        },
+        "PackLabel": "Kompendiumname",
+        "Character": "Charakter",
+        "WildCard": "Wildcard",
+        "Concept": "Konzept",
+        "Biography": "Biografie",
+        "Ability": "Fähigkeit",
+        "Abilities": "Fähigkeiten",
+        "AttrAgi": "Geschick",
+        "AttrSma": "Verstand",
+        "AttrSpr": "Willenskraft",
+        "AttrStr": "Stärke",
+        "AttrVig": "Konstitution",
+        "Item": "Item",
+        "Type": "Typ",
+        "Trait": "Eigenschaft",
+        "Traits": "Eigenschaften",
+        "Attribute": "Attribut",
+        "Attributes": "Attribute",
+        "Skill": "Fertigkeit",
+        "Skills": "Fertigkeiten",
+        "DieSides": "Würfelseiten",
+        "LinkedAttribute": "Verbundenes Attribut",
+        "Ancestry": "Volk",
+        "Ancestries": "Völker",
+        "Archetype": "Archetyp",
+        "Archetypes": "Archetypen",
+        "Hindrance": "Handicap",
+        "Hindrances": "Handicaps",
+        "Major": "Schwer",
+        "Minor": "Leicht",
+        "Edge": "Talent",
+        "Edges": "Talente",
+        "Requirements": "Voraussetzungen",
+        "Power": "Macht",
+        "Powers": "Mächte",
+        "Rank": "Rang",
+        "Category": "Kategorie",
+        "Equipment": "Ausrüstung",
+        "Gear": "Ausrüstung",
+        "Armor": "Rüstung",
+        "Shields": "Schilde",
+        "MeleeWeapons": "Nahkampfwaffen",
+        "RangedWeapons": "Fernkampfwaffen",
+        "Price": "Kosten",
+        "Weight": "Gewicht",
+        "Notes": "Notizen",
+        "AP": "PB",
+        "Parry": "Parade",
+        "Damage": "Schaden",
+        "MinStr": "Min Stä.",
+        "Range": "Reichweite",
+        "RoF": "FR",
+        "SearchPlaceholder": "Items filtern...",
+        "AddItemsToActor": "Items hinzufügen",
+        "Advance": "Aufstieg",
+        "Advances": "Aufstiege",
+        "DieTypes": "Würfeltypen",
+        "BackToTop": "Nach oben",
+        "Creating": "Erstellen",
+        "ItemGrants": "Gewährte Items",
+        "Summary": "Übersicht",
+        "Delete": "Entfernen",
+        "Toggle": "Umschalten",
+        "Open": "Öffnen",
+        "Cancel": "Abbrechen",
+        "Submit": "OK",
+        "Fighting": "Kämpfen",
+        "Shooting": "Schießen",
+        "Athletics": "Athletik"
+    }
+}
