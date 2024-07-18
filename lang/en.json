@@ -1,6 +1,9 @@
 {
     "SWADEItemTables": {
         "Title": "SWADE Item Tables",
+        "OpenItemTables": "Open Item Tables",
+        "ActorListings": "Actor Listings",
+        "OpenActorListings": "Open Actor Listings",
         "ItemsList": {
             "Title": "Item Tables",
             "Name": "Configure Items to Include",
@@ -16,12 +19,12 @@
             "Hint": "Prevents the button for opening the Crafting Table from appearing in the Items Directory in the Sidebar."
         },
         "SeparateBySource": {
-            "Name": "Separate Items by Source",
-            "Hint": "Separates in the tables Items by their source modules."
+            "Name": "Separate Entries by Source",
+            "Hint": "Groups Items and Actors by their source modules."
         },
         "HideUnobtainable": {
             "Name": "Hide Unobtainable Items",
-            "Hint": "Hides in the tables Items for which the given Character does not qualify or cannot afford."
+            "Hint": "Hides in the tables Items for which the given Character does not qualify or that the character cannot afford."
         },
         "SuppressCharacterSheetRender": {
             "Name": "Suppress Rendering Character Sheet for New Characters",
@@ -30,6 +33,10 @@
         "HideItemCompendia": {
             "Name": "Hide Item Compendia",
             "Hint": "Hides Item Compendia from non-GMs to require browsing for items via the Item Tables app."
+        },
+        "ArchetypeTabs": {
+            "Name": "Enable Archetype Tabs",
+            "Hint": "Checking this will display tabs for Archetypes in the Item Tables, Configuration, and Character Creator."
         },
         "BornAHero": {
             "Name": "Born a Hero",
@@ -72,7 +79,10 @@
             "AddHindrances": "Add Hindrances by dragging and dropping them onto the table below. If a Hindrance has both Major and Minor options, drag the Hindrance by the desired severity type from the Item Tables.",
             "Change": "Change",
             "Delete": "Remove",
-            "HasAdaptable": "Has Adaptable Ability",
+            "HasAdaptable": {
+                "Label": "Has Adaptable Ability",
+                "Tooltip": "Mark the character as having the Adaptable Ability, granting them a Free Edge."
+            },
             "Hindrance": {
                 "Edit": "Edit Hindrance",
                 "SpendPoints": "Spend Points",
@@ -86,7 +96,8 @@
                 "LargerThanLife": {
                     "DropZone": {
                         "Heading": "Larger Than Life",
-                        "Description": "Drag and drop your choice of a Major Hindrance for the Larger Than Life Setting Rule."
+                        "Description": "Drag and drop your choice of a Major Hindrance for the Larger Than Life Setting Rule.",
+                        "Unqualified": "Only characters with the Super Powers Edge can benefit from an additional Major Hindrance."
                     }
                 }
             }
@@ -96,7 +107,8 @@
             "AdvanceWildCard": "Advance Wild Card",
             "AdvanceExtra": "Advance Extra",
             "IncreaseAttribute": "Increase Attribute",
-            "IncreasedAttribute": "Increase {attribute}"
+            "IncreasedAttribute": "Increase {attribute}",
+            "OneAttributeIncreasePerRank": "You may increase an Attribute only once per Rank."
         },
         "CraftingTable": {
             "Title": "Crafting Table",
@@ -120,9 +132,18 @@
                 "PlusTwoShootingDamageDie": "+2 Shooting and damage die increases one step"
             }
         },
+        "Mutator": {
+            "Title": "Mutator",
+            "Instructions": "<p>Drop an Item that contains Item Grants into this window to add or edit the grants' mutations.</p><p>For more information about Item Grant mutations, refer to the {docLink}.</p>",
+            "Mutations": "Mutations",
+            "PackLocked": "This Item's Compendium pack is locked and its mutations cannot be edited.",
+            "NoGrants": "This item does not include any Item Grants.",
+            "DataPath": "Property Path",
+            "Value": "Value"
+        },
         "ArcaneSkillSelector": {
             "Title": "Arcane Skill Selector",
-            "Text": "If {name} requires an arcane skill to activate powers, please select the appropriate skill below. Otherwise, you may click Cancel to skip this step.",
+            "Text": "<p>If <strong>{name}</strong> requires an arcane skill to activate powers, <strong>select the appropriate skill below</strong>. Otherwise, you may <strong>skip</strong> this step.</p><p>If the skill does not appear in the list yet, please make sure the skill has been added to the Actor and click <strong>refresh</strong> next to the list of skills.</p>",
             "SelectLabel": "Arcane Skill",
             "Refresh": "Refresh list of character's skills",
             "Refreshed": "SWADE Item Tables: Skills list refreshed."
@@ -182,7 +203,7 @@
             "CannotUpgradeSameSkill": "SWADE Item Tables: You cannot update the same skill twice in a single advance.",
             "CannotIncreaseSkill": "SWADE Item Tables: You've already added or increased a skill below its linked attribute. You cannot increase a skill beyond its linked attribute for this advance.",
             "AlreadyHasEdge": "SWADE Item Tables: {name} already has the {edgeName} Edge.",
-            "NoItem": "SWADE Item Tables: There currently is no Item on the crafting table.",
+            "NoItem": "SWADE Item Tables: No Item to open.",
             "InvalidItemType": "SWADE Item Tables: The Item must be some form of physical Item such as ammunition, armor, shield, or weapon.",
             "EdgeRequirementsNotMet": "SWADE Item Tables: {name} does not meet the requirements to take this Edge.",
             "NoAdvanceData": "SWADE Item Tables: Advance {action}, but character changes were not tracked for this advance.",
@@ -195,8 +216,12 @@
             "Heroic": "Heroic",
             "Legendary": "Legendary"
         },
+        "Name": "Name",
         "PackLabel": "Compendium Name",
         "Character": "Character",
+        "Characters": "Characters",
+        "NPC": "NPC",
+        "NPCs": "NPCs",
         "WildCard": "Wild Card",
         "Concept": "Concept",
         "Biography": "Biography",
@@ -217,6 +242,9 @@
         "Skills": "Skills",
         "DieSides": "Die Sides",
         "LinkedAttribute": "Linked Attribute",
+        "Action": "Action",
+        "Actions": "Actions",
+        "AvailableActions": "Available Actions",
         "Ancestry": "Ancestry",
         "Ancestries": "Ancestries",
         "Archetype": "Archetype",
@@ -225,6 +253,8 @@
         "Hindrances": "Hindrances",
         "Major": "Major",
         "Minor": "Minor",
+        "DragAsMinor": "Drag to Character Creator as a Minor Hindrance",
+        "DragAsMajor": "Drag to Character Creator as a Major Hindrance",
         "Edge": "Edge",
         "Edges": "Edges",
         "Requirements": "Requirements",
@@ -259,10 +289,12 @@
         "Delete": "Remove",
         "Toggle": "Toggle",
         "Open": "Open",
+        "Skip": "Skip",
         "Cancel": "Cancel",
         "Submit": "Submit",
         "Fighting": "Fighting",
         "Shooting": "Shooting",
-        "Athletics": "Athletics"
+        "Athletics": "Athletics",
+        "OrListSeparator": " or"
     }
 }
