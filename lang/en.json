@@ -2,6 +2,7 @@
     "SWADEItemTables": {
         "Title": "SWADE Item Tables",
         "OpenItemTables": "Open Item Tables",
+        "OpenCharacterSheet": "Open Character Sheet",
         "ActorListings": "Actor Listings",
         "OpenActorListings": "Open Actor Listings",
         "ItemsList": {
@@ -12,7 +13,7 @@
         },
         "HideSystem": {
             "Name": "Hide System Items",
-            "Hint": "Hides Items for the SWADE System Compendia"
+            "Hint": "Hides the basic Items provided by the system."
         },
         "HideCraftingTable": {
             "Name": "Hide Crafting Table Button",
@@ -32,7 +33,7 @@
         },
         "HideItemCompendia": {
             "Name": "Hide Item Compendia",
-            "Hint": "Hides Item Compendia from non-GMs to require browsing for items via the Item Tables app."
+            "Hint": "Hides Item Compendia from non-GMs to encourage browsing for Items via the Item Tables app."
         },
         "ArchetypeTabs": {
             "Name": "Enable Archetype Tabs",
@@ -58,9 +59,10 @@
             "Title": "Included Items Configuration",
             "Pretext": "Right-click on an Item's name to open its sheet."
         },
-        "CharacterCreator": {
-            "Title": "Create Character",
-            "CreateCharacter": "Edit Character Build",
+        "CharacterBuilder": {
+            "Title": "Character Builder",
+            "CharacterName": "Character Name",
+            "EditCharacterBuild": "Edit Character Build",
             "Concept": "Concept",
             "Points": "Points",
             "AdjustAttributePoints": {
@@ -71,27 +73,25 @@
                 "Label": "Adjust skill points",
                 "Tooltip": "Change the character's max available skill points based on Hindrances, Complications, et al (e.g., Young)"
             },
-            "Slots": "Slots",
-            "AddAncestry": "You must first either drop an ancestry ability Item below or enter a name for a custom ancestry for your new character before continuing.",
+            "EdgeSlots": "Edge Slots",
+            "AddAncestry": "You must first either drop an ancestry ability Item or enter a name for a custom ancestry for your new character before continuing.",
+            "DeleteAncestry": "Remove Ancestry",
             "AddArchetype": "Some settings such as RIFTS for Savage Worlds use \"Archetypes\" (e.g., Iconic Frameworks, Packages, et al). If this World makes use of archetype Items, add the character's archetype by dropping it here.",
-            "AddSkillsInstructions": "Add skills by dropping them into the table below. You can also add them by specific die type.",
-            "AddEdgesInstructions": "Add Edges by dropping them into the table below.",
-            "AddHindrances": "Add Hindrances by dragging and dropping them onto the table below. If a Hindrance has both Major and Minor options, drag the Hindrance by the desired severity type from the Item Tables.",
-            "Change": "Change",
-            "Delete": "Remove",
-            "HasAdaptable": {
-                "Label": "Has Adaptable Ability",
-                "Tooltip": "Mark the character as having the Adaptable Ability, granting them a Free Edge."
-            },
+            "DeleteArchetype": "Remove Archetype",
+            "HindrancePoints": "Hindrance Points",
+            "AttributePoints": "Attribute Points",
+            "PointCost": "Point Cost",
+            "AddHindrances": "To gain Hindrance points, add Hindrances by dragging and dropping them onto the table below. If a Hindrance has both Major and Minor options, drag the Hindrance by the desired severity type from the Hindrance Item Table.",
+            "DeleteHindrance": "Remove Hindrance",
             "Hindrance": {
                 "Edit": "Edit Hindrance",
                 "SpendPoints": "Spend Points",
-                "PointsOption": "Apply Points to",
+                "PointsOption": "Options:",
                 "SelectOption": "-- Select an option --",
                 "RaiseAttribute": "Raise an attribute one die type",
-                "ChooseEdge": "Choose an Edge",
-                "GainSkillPoint": "Gain a skill point",
-                "GainStartingFunds": "Gain 2x starting funds",
+                "ChooseEdge": "Gain an Edge",
+                "GainSkillPoint": "Gain an extra skill point",
+                "GainStartingFunds": "Gain an additional 2x starting funds",
                 "DeletePointSelect": "Remove Hindrance Points Selection",
                 "LargerThanLife": {
                     "DropZone": {
@@ -100,15 +100,54 @@
                         "Unqualified": "Only characters with the Super Powers Edge can benefit from an additional Major Hindrance."
                     }
                 }
+            },
+            "SkillPoints": "Skill Points",
+            "AddSkillsInstructions": "Add skills by dropping them into the table below. You can also add them by dragging a specific die type from the Skills Item Table.",
+            "DeleteSkill": "Remove Skill",
+            "AddEdgesInstructions": "Add Edges by dropping them into the table below.",
+            "DeleteEdge": "Remove Edge",
+            "Change": "Change",
+            "HasAdaptable": {
+                "Label": "Has Adaptable Ability",
+                "Tooltip": "Mark the character as having the Adaptable Ability, granting them a Free Edge."
+            },
+            "Advances": {
+                "Type": "Type",
+                "AdvanceExtra": "Advance Extra",
+                "AddAdvance": "Add an Advance by dropping a skill, Edge, or Hindrance below, or by selecting an attribute to increase.",
+                "AttributeIncrease": {
+                    "IncreaseAttribute": "Increase Attribute",
+                    "SelectAttribute": "Select an attribute...",
+                    "IncreasedAttribute": "Increase {attribute}",
+                    "OneAttributeIncreasePerRank": "You may increase an attribute only once per Rank."
+                },
+                "Hindrance": {
+                    "Reduced": "Reduced {name}.",
+                    "Removed": "Removed {name}.",
+                    "Saved": "Saved Advance to remove {name}."
+                },
+                "Skill": {
+                    "Added": "Gained the {name} skill.",
+                    "Increased": "Increased {name} by one die type.",
+                    "IncreasedTwoSkills": "Increased {name} and {name2} by one die type each."
+                },
+                "Edge": "Gained the {name} Edge.",
+                "NewPowers": {
+                    "Name": "New Powers",
+                    "Add": "<p><strong>Note:</strong> Drag and drop <em>{quantity}</em> to add to your character and notes for this Advance.</p>",
+                    "AddTwo": "two powers",
+                    "AddOne": "one more power",
+                    "AddMore": "<p><strong>Note:</strong> If you have an Edge or Special Ability that increases the number of powers granted each time you take this Edge (e.g., Spellbooks) you may add more than two powers total.</p>",
+                    "Added": "Gained the {name} Edge ({powerLinks})."
+                },
+                "ArcaneBackground": {
+                    "Add": "<p><strong>Note:</strong> Drag and drop powers to add to your character and notes for this Advance.</p>",
+                    "Added": "Gained the {name} Edge ({powerLinks})."
+                },
+                "MarkAdvanceAsPlanned": "Mark Advance as planned",
+                "ApplyAdvance": "Apply Advance",
+                "DeleteAdvance": "Remove Advance"
             }
-        },
-        "CharacterAdvances": {
-            "Title": "Advances",
-            "AdvanceWildCard": "Advance Wild Card",
-            "AdvanceExtra": "Advance Extra",
-            "IncreaseAttribute": "Increase Attribute",
-            "IncreasedAttribute": "Increase {attribute}",
-            "OneAttributeIncreasePerRank": "You may increase an Attribute only once per Rank."
         },
         "CraftingTable": {
             "Title": "Crafting Table",
@@ -141,15 +180,42 @@
             "DataPath": "Property Path",
             "Value": "Value"
         },
+        "AdvanceCharacter": {
+            "Type": "Type",
+            "AddAdvance": "Add an Advance by dropping a skill, Edge, or Hindrance below, or increase an attribute on the character's sheet.",
+            "Hindrance": {
+                "Reduced": "Reduced {name}.",
+                "Removed": "Removed {name}.",
+                "Saved": "Saved Advance to remove {name}."
+            },
+            "Skill": {
+                "Added": "Gained the {name} skill.",
+                "Increased": "Increased {name} by one die type.",
+                "IncreasedTwoSkills": "Increased {name} and {name2} by one die type each."
+            },
+            "Edge": "Gained the {name} Edge.",
+            "NewPowers": {
+                "Name": "New Powers",
+                "Add": "<p><strong>Note:</strong> Drag and drop <em>{quantity}</em> to add to your character and notes for this Advance.</p>",
+                "AddTwo": "two powers",
+                "AddOne": "one more power",
+                "AddMore": "<p><strong>Note:</strong> If you have an Edge or Special Ability that increases the number of powers granted each time you take this Edge (e.g., Spellbooks) you may add more than two powers total.</p>",
+                "Added": "Gained the {name} Edge ({powerLinks})."
+            },
+            "ArcaneBackground": {
+                "Add": "<p><strong>Note:</strong> Drag and drop powers to add to your character and notes for this Advance.</p>",
+                "Added": "Gained the {name} Edge ({powerLinks})."
+            }
+        },
         "ArcaneSkillSelector": {
-            "Title": "Arcane Skill Selector",
+            "Title": "Set the Arcane Skill",
             "Text": "<p>If <strong>{name}</strong> requires an arcane skill to activate powers, <strong>select the appropriate skill below</strong>. Otherwise, you may <strong>skip</strong> this step.</p><p>If the skill does not appear in the list yet, please make sure the skill has been added to the Actor and click <strong>refresh</strong> next to the list of skills.</p>",
             "SelectLabel": "Arcane Skill",
             "Refresh": "Refresh list of character's skills",
             "Refreshed": "SWADE Item Tables: Skills list refreshed."
         },
         "ArcaneBackgroundSelector": {
-            "Title": "Arcane Background Selector",
+            "Title": "Select an Arcane Background",
             "Text": "Select an Arcane Background for the {name} power",
             "SelectLabel": "Arcane Background",
             "Refresh": "Refresh list of character's Arcane Backgrounds",
@@ -169,21 +235,6 @@
             "Title": "Import Configuration",
             "Content": "<p>Are you sure you want to overwrite the current configuration with the file's contents?</p>"
         },
-        "AdvanceCharacter": {
-            "Type": "Type",
-            "AddAdvance": "Add an advance by dropping a skill, Edge, or Hindrance below, or increase an Attribute on the character's sheet.",
-            "Hindrance": {
-                "Reduced": "Reduced {name}.",
-                "Removed": "Removed {name}.",
-                "Saved": "Saved advance to remove {name}."
-            },
-            "Skill": {
-                "Added": "Gained the {name} skill.",
-                "Increased": "Increased {name} by one die type.",
-                "IncreasedTwoSkills": "Increased {name} and {name2} by one die type each."
-            },
-            "Edge": "Gained the {name} Edge."
-        },
         "PopUp": {
             "NoDescription": "No description provided."
         },
@@ -200,14 +251,19 @@
             "NoAttributePointsAvailable": "SWADE Item Tables: {name} does not have any attribute points available.",
             "NoSkillPointsAvailable": "SWADE Item Tables: {name} does not have any skill points available.",
             "NoEdgeSlotsAvailable": "SWADE Item Tables: {name} does not have any Edge slots available.",
-            "CannotUpgradeSameSkill": "SWADE Item Tables: You cannot update the same skill twice in a single advance.",
-            "CannotIncreaseSkill": "SWADE Item Tables: You've already added or increased a skill below its linked attribute. You cannot increase a skill beyond its linked attribute for this advance.",
+            "CannotUpgradeSameSkill": "SWADE Item Tables: You cannot update the same skill twice in a single Advance.",
+            "CannotIncreaseSkill": "SWADE Item Tables: You've already added or increased a skill below its linked attribute. You cannot increase a skill beyond its linked attribute for this Advance.",
             "AlreadyHasEdge": "SWADE Item Tables: {name} already has the {edgeName} Edge.",
+            "AdvanceItemTypes": "SWADE Item Tables: Only Hindrances, skills, Edges, and powers (if taking the New Powers Edge) are accepted.",
             "NoItem": "SWADE Item Tables: No Item to open.",
             "InvalidItemType": "SWADE Item Tables: The Item must be some form of physical Item such as ammunition, armor, shield, or weapon.",
             "EdgeRequirementsNotMet": "SWADE Item Tables: {name} does not meet the requirements to take this Edge.",
-            "NoAdvanceData": "SWADE Item Tables: Advance {action}, but character changes were not tracked for this advance.",
-            "LargerThanLifeMajorHindranceRequired": "SWADE Item Tables: The Larger Than Life Setting Rule requires a Major Hindrance."
+            "NoAdvanceData": "SWADE Item Tables: Advance {action}, but character changes were not tracked for this Advance.",
+            "LargerThanLifeMajorHindranceRequired": "SWADE Item Tables: The Larger Than Life Setting Rule requires a Major Hindrance.",
+            "MustTakePowersGrantingEdge": "SWADE Item Tables: The character must first take either Arcane Background or the New Powers Edge before adding new powers.",
+            "CannotTakePowerPoints": "SWADE Item Tables: The character cannot take the Power Points Edge again until the next Rank.",
+            "ItemSwidCopied": "SWADE Item Tables: Item swid \"{swid}\" copied to clipboard.",
+            "GrantHasBrokenLink": "SWADE Item Tables: Granted Item \"{name}\" cannot be found."
         },
         "Ranks": {
             "Novice": "Novice",
@@ -247,6 +303,8 @@
         "AvailableActions": "Available Actions",
         "Ancestry": "Ancestry",
         "Ancestries": "Ancestries",
+        "BuildCost": "Build Cost",
+        "BuildValue": "Value",
         "Archetype": "Archetype",
         "Archetypes": "Archetypes",
         "Hindrance": "Hindrance",
@@ -260,6 +318,10 @@
         "Requirements": "Requirements",
         "Power": "Power",
         "Powers": "Powers",
+        "PowerPoints": "Power Points",
+        "PowerPointsWithArcaneBackground": "Power Points ({arcaneBackground})",
+        "PowerPointsAssignment": "Power Points Assignment",
+        "PowerPointsAdded": "{number} Power Points added to {arcaneBackground}",
         "Rank": "Rank",
         "Category": "Category",
         "Equipment": "Equipment",
@@ -285,7 +347,7 @@
         "BackToTop": "Back to Top",
         "Creating": "Creating",
         "ItemGrants": "Item Grants",
-        "Summary": "Summary",
+        "Summary": "Description",
         "Delete": "Remove",
         "Toggle": "Toggle",
         "Open": "Open",
@@ -295,6 +357,10 @@
         "Fighting": "Fighting",
         "Shooting": "Shooting",
         "Athletics": "Athletics",
-        "OrListSeparator": " or"
+        "Unskilled": "Unskilled",
+        "Untrained": "Untrained",
+        "OrListSeparator": " or",
+        "CopySWID": "Copy Item SWID",
+        "DragSeverity": "Drag to add {hindrance} ({severity})"
     }
 }
