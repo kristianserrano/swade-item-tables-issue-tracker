@@ -1,6 +1,10 @@
 {
     "SWADEItemTables": {
         "Title": "SWADE Item Tables",
+        "OpenItemTables": "Itemtabellen öffnen",
+        "OpenCharacterSheet": "Charakterbogen öffnen",
+        "ActorListings": "Akteurlisten",
+        "OpenActorListings": "Akteurlisten öffnen",
         "ItemsList": {
             "Title": "Itemtabellen",
             "Name": "Genutzte Items festlegen",
@@ -31,6 +35,10 @@
             "Name": "Item-Kompendien verstecken",
             "Hint": "Versteckt Item-Kompendien (außer für die SL), um die Nutzung der Itemtabellen-App zu erzwingen."
         },
+        "ArchetypeTabs": {
+            "Name": "Archetyp-Reiter aktivieren",
+            "Hint": "Wenn aktiviert werden Reiter für Archetypen in Itemtabellen, Konfiguration und Charaktererschaffung angezeigt."
+        },
         "BornAHero": {
             "Name": "Geborener Held",
             "Hint": "Schaltet die Settingregel Geborener Held ein, wenn aktiviert."
@@ -51,9 +59,10 @@
             "Title": "Konfiguration genutzter Items",
             "Pretext": "Rechtsklick auf Itemnamen, um dessen Bogen zu öffnen."
         },
-        "CharacterCreator": {
+        "CharacterBuilder": {
             "Title": "Charakter erstellen",
-            "CreateCharacter": "Charakter bearbeiten",
+            "CharacterName": "Charaktername",
+            "EditCharacterBuild": "Charakter bearbeiten",
             "Concept": "Konzept",
             "Points": "Punkte",
             "AdjustAttributePoints": {
@@ -64,19 +73,20 @@
                 "Label": "Fertigkeitspunkte anpassen",
                 "Tooltip": "Maximale Fertigkeitspunkte entsprechend Handicaps (wie Jung) etc. anpassen"
             },
-            "Slots": "Plätze",
+            "EdgeSlots": "Talentplätze",
             "AddAncestry": "Vor dem Fortfahren Volk-Item unten reinziehen oder für eigenes Volk Volksnamen im Charakterbogen eingeben.",
+            "DeleteAncestry": "Volk entfernen",
             "AddArchetype": "Manche Settings (wie RIFTS for Savage Worlds) nutzen \"Archetypen\". Wenn diese Welt Archetypen nutzt, Archetyp-Item unten reinziehen.",
-            "AddSkillsInstructions": "Fertigkeiten in die Tabelle unten ziehen. Fertigkeiten können auch direkt per Würfeltyp gezogen werden.",
-            "AddEdgesInstructions": "Talente in die Tabelle unten ziehen.",
+            "DeleteArchetype": "Archetyp entfernen",
+            "HindrancePoints": "Handicappunkte",
+            "AttributePoints": "Attributpunkte",
+            "PointCost": "Punktekosten",
             "AddHindrances": "Handicaps in die Tabelle unten ziehen. Falls ein Handicap Leicht oder Schwer sein kann, am gewünschten Schweregrad aus der Tabelle reinziehen.",
-            "Change": "Ändern",
-            "Delete": "Entfernen",
-            "HasAdaptable": "Hat Volksfähigkeit Anpassungsfähig",
+            "DeleteHindrance": "Handicap entfernen",
             "Hindrance": {
                 "Edit": "Handicap bearbeiten",
                 "SpendPoints": "Punkte ausgeben",
-                "PointsOption": "Punkte ausgeben:",
+                "PointsOption": "Optionen:",
                 "SelectOption": "-- Option wählen --",
                 "RaiseAttribute": "Attribut um einen Würfeltyp steigern",
                 "ChooseEdge": "Talent wählen",
@@ -86,17 +96,58 @@
                 "LargerThanLife": {
                     "DropZone": {
                         "Heading": "Überlebensgroß",
-                        "Description": "Schweres Handicap der Wahl für Settingregel Überlebensgroß herziehen."
+                        "Description": "Schweres Handicap der Wahl für Settingregel Überlebensgroß herziehen.",
+                        "Unqualified": "Nur Charaktere mit dem Superkräfte-Talent ziehen einen Vorteil aus einem zusätzlichen schweren Handicap."
                     }
                 }
+            },
+            "SkillPoints": "Fertigkeitspunkte",
+            "AddSkillsInstructions": "Fertigkeiten in die Tabelle unten ziehen. Fertigkeiten können auch direkt per Würfeltyp gezogen werden.",
+            "DeleteSkill": "Fertigkeit entfernen",
+            "AddEdgesInstructions": "Talente in die Tabelle unten ziehen.",
+            "DeleteEdge": "Talent entfernen",
+            "Change": "Ändern",
+            "HasAdaptable": {
+                "Label": "Anpassungsfähig",
+                "Tooltip": "Der Charakter verfügt über die Volksfähigkeit Anpassungsfähig, welche ein zusätzliches kostenloses Talent gewährt."
+            },
+            "Advances": {
+                "Type": "Typ",
+                "AdvanceExtra": "Statist-Aufstieg",
+                "AddAdvance": "Für Aufstieg Fertigkeit, Talent oder Handicap unten reinziehen oder zu steigerndes Attribut wählen.",
+                "AttributeIncrease": {
+                    "IncreaseAttribute": "Attribut steigern",
+                    "SelectAttribute": "Attribut wählen...",
+                    "IncreasedAttribute": "{attribute} steigern",
+                    "OneAttributeIncreasePerRank": "Es kann nur einmal je Rang ein Attribut durch einen Aufstieg gesteigert werden."
+                },
+                "Hindrance": {
+                    "Reduced": "{name} abgeschwächt.",
+                    "Removed": "{name} entfernt.",
+                    "Saved": "Aufstieg aufgespart, um {name} zu entfernen."
+                },
+                "Skill": {
+                    "Added": "Fertigkeit {name} erhalten.",
+                    "Increased": "Fertigkeit {name} um einen Würfeltyp gesteigert.",
+                    "IncreasedTwoSkills": "Fertigkeiten {name} und {name2} um je einen Würfeltyp gesteigert."
+                },
+                "Edge": "Talent {name} erhalten.",
+                "NewPowers": {
+                    "Name": "Neue Mächte",
+                    "Add": "<p><strong>Note:</strong> Drag and drop <em>{quantity}</em> to add to your character and notes for this Advance.</p>",
+                    "AddTwo": "zwei Mächte",
+                    "AddOne": "eine weitere Macht",
+                    "AddMore": "<p><strong>Hinweis:</strong> Manche Talente oder Fähigkeiten erhöhen die Anzahl Mächte, die dieses Talent gewährt (z.B. das Talent Zauberbücher). In diesem Fall dürfen mehr als die zwei Mächte hinzugefügt werden.</p>",
+                    "Added": "Talent {name} erhalten ({powerLinks})."
+                },
+                "ArcaneBackground": {
+                    "Add": "<p><strong>Hinweis:</strong> Mächte reinziehen, die dem Charakter und seinen Notizen durch diesen Aufstieg hinzugefügt werden sollen.</p>",
+                    "Added": "Talent {name} erhalten ({powerLinks})."
+                },
+                "MarkAdvanceAsPlanned": "Aufstieg als geplant setzen",
+                "ApplyAdvance": "Aufstieg anwenden",
+                "DeleteAdvance": "Aufstieg entfernen"
             }
-        },
-        "CharacterAdvances": {
-            "Title": "Aufstiege",
-            "AdvanceWildCard": "Wildcard-Aufstieg",
-            "AdvanceExtra": "Statist-Aufstieg",
-            "IncreaseAttribute": "Attribut steigern",
-            "IncreasedAttribute": "{attribute} steigern"
         },
         "CraftingTable": {
             "Title": "Werkbank",
@@ -120,9 +171,45 @@
                 "PlusTwoShootingDamageDie": "+2 Schießen und Schadenswürfeltyp um eins gesteigert"
             }
         },
+        "Mutator": {
+            "Title": "Mutator",
+            "Instructions": "<p>Item, das Items gewährt reinziehen, um die Mutationen gewährter Items zu bearbeiten.</p><p>Mehr Informationen hier: {docLink}.</p>",
+            "Mutations": "Mutationen",
+            "PackLocked": "Das Kompendium mit dem Item ist schreibgeschützt, daher kann das Item nicht bearbeitet werden.",
+            "NoGrants": "Item gewährt keine Items.",
+            "DataPath": "Eigenschaftspfad",
+            "Value": "Wert"
+        },
+        "AdvanceCharacter": {
+            "Type": "Type",
+            "AddAdvance": "Aufstieg hinzufügen: Fertigkeit, Talent oder Handicap unten hinziehen, oder Attribut im Charakterbogen steigern.",
+            "Hindrance": {
+                "Reduced": "{name} abgeschwächt.",
+                "Removed": "{name} entfernt.",
+                "Saved": "Aufstieg aufgespart, um {name} zu entfernen."
+            },
+            "Skill": {
+                "Added": "Fertigkeit {name} erhalten.",
+                "Increased": "Fertigkeit {name} um einen Würfeltyp gesteigert.",
+                "IncreasedTwoSkills": "Fertigkeiten {name} und {name2} um je einen Würfeltyp gesteigert."
+            },
+            "Edge": "Talent {name} erhalten.",
+            "NewPowers": {
+                "Name": "Neue Mächte",
+                "Add": "<p><strong>Note:</strong> Drag and drop <em>{quantity}</em> to add to your character and notes for this Advance.</p>",
+                "AddTwo": "zwei Mächte",
+                "AddOne": "eine weitere Macht",
+                "AddMore": "<p><strong>Hinweis:</strong> Manche Talente oder Fähigkeiten erhöhen die Anzahl Mächte, die dieses Talent gewährt (z.B. das Talent Zauberbücher). In diesem Fall dürfen mehr als die zwei Mächte hinzugefügt werden.</p>",
+                "Added": "Talent {name} erhalten ({powerLinks})."
+            },
+            "ArcaneBackground": {
+                "Add": "<p><strong>Hinweis:</strong> Mächte reinziehen, die dem Charakter und seinen Notizen durch diesen Aufstieg hinzugefügt werden sollen.</p>",
+                "Added": "Talent {name} erhalten ({powerLinks})."
+            }
+        },
         "ArcaneSkillSelector": {
             "Title": "Arkane Fertigkeit wählen",
-            "Text": "Falls {name} eine Arkane Fertigkeit zum Aktivieren von Mächten verlangt, bitte unten die nötige Fertigkeit wähhlen. Ansonsten Abbrechen klicken.",
+            "Text": "<p>Falls <strong>{name}</strong> eine Arkane Fertigkeit zum Aktivieren von Mächten verlangt, bitte unten die nötige Fertigkeit wähhlen. Ansonsten kann dieser Schritt <strong>übersprungen</strong> werden.</p><p>Wenn die benötigte Fertigkeit nicht aufgelistet wird, muss sie dem Akteur hinzugefügt und die Liste <strong>aktualisiert</strong> werden.</p>",
             "SelectLabel": "Arkane Fertigkeit",
             "Refresh": "Fertigkeitsliste aktualisieren",
             "Refreshed": "SWADE Item Tables: Fertigkeitsliste aktualisiert."
@@ -148,21 +235,6 @@
             "Title": "Konfiguration importieren",
             "Content": "<p>Sicher, dass die aktuelle Konfiguration mit dem Inhalt der Datei überschrieben werden soll?</p>"
         },
-        "AdvanceCharacter": {
-            "Type": "Typ",
-            "AddAdvance": "Aufstieg hinzufügen: Fertigkeit, Talent oder Handicap unten hinziehen, oder Attribut im Charakterbogen steigern.",
-            "Hindrance": {
-                "Reduced": "{name} reduziert.",
-                "Removed": "{name} entfernt.",
-                "Saved": "Aufstieg zum Entfernen von {name} gespeichert."
-            },
-            "Skill": {
-                "Added": "Fertigkeit {name} erlangt.",
-                "Increased": "{name} um einen Würfeltyp gesteigert.",
-                "IncreasedTwoSkills": "{name} und {name2} um je einen Würfeltyp gesteigert."
-            },
-            "Edge": "Talent {name} erlangt."
-        },
         "PopUp": {
             "NoDescription": "Keine Beschreibung verfügbar."
         },
@@ -186,7 +258,11 @@
             "InvalidItemType": "SWADE Item Tables: Item muss ein physischer Gegenstand (wie Munition, Rüstung, Schild oder Waffe) sein.",
             "EdgeRequirementsNotMet": "SWADE Item Tables: {name} erfüllt die Voraussetzungen für dieses Talent nicht.",
             "NoAdvanceData": "SWADE Item Tables: Aufstieg: {action}, aber die Charakteränderungen wurden für diesen Aufstieg nicht festgehalten.",
-            "LargerThanLifeMajorHindranceRequired": "SWADE Item Tables: Die Settingregel Überlebensgroß verlangt ein Schweres Handicap."
+            "LargerThanLifeMajorHindranceRequired": "SWADE Item Tables: Die Settingregel Überlebensgroß verlangt ein Schweres Handicap.",
+            "MustTakePowersGrantingEdge": "SWADE Item Tables: Der Charakter muss einen Arkanen Hintergrund oder das Talent Neue Mächte besitzen, befor er Mächte erlernen kann.",
+            "CannotTakePowerPoints": "SWADE Item Tables: Der Charakter kann das Talent Machtpunkte erst mit dem nächsten Rang erneut wählen.",
+            "ItemSwidCopied": "SWADE Item Tables: Item SWID \"{swid}\" in Zwischenablage kopiert.",
+            "GrantHasBrokenLink": "SWADE Item Tables: Gewährtes Item \"{name}\" konnte nicht gefunden werden."
         },
         "Ranks": {
             "Novice": "Anfänger",
@@ -195,8 +271,12 @@
             "Heroic": "Heroisch",
             "Legendary": "Legendär"
         },
+        "Name": "Name",
         "PackLabel": "Kompendiumname",
         "Character": "Charakter",
+        "Characters": "Charaktere",
+        "NPC": "NSC",
+        "NPCs": "NSCs",
         "WildCard": "Wildcard",
         "Concept": "Konzept",
         "Biography": "Biografie",
@@ -217,19 +297,29 @@
         "Skills": "Fertigkeiten",
         "DieSides": "Würfelseiten",
         "LinkedAttribute": "Verbundenes Attribut",
+        "Action": "Aktion",
+        "Actions": "Aktionen",
         "Ancestry": "Volk",
         "Ancestries": "Völker",
+        "BuildCost": "Kosten",
+        "BuildValue": "Wert",
         "Archetype": "Archetyp",
         "Archetypes": "Archetypen",
         "Hindrance": "Handicap",
         "Hindrances": "Handicaps",
         "Major": "Schwer",
         "Minor": "Leicht",
+        "DragAsMinor": "Als leichtes Handicap in die Charaktererschaffung ziehen",
+        "DragAsMajor": "Als schweres Handicap in die Charaktererschaffung ziehen",
         "Edge": "Talent",
         "Edges": "Talente",
         "Requirements": "Voraussetzungen",
         "Power": "Macht",
         "Powers": "Mächte",
+        "PowerPoints": "Machtpunkte",
+        "PowerPointsWithArcaneBackground": "Machtpunkte ({arcaneBackground})",
+        "PowerPointsAssignment": "Machtpunkte-Zuweisung",
+        "PowerPointsAdded": "{number} Machtpunkte {arcaneBackground} zugewiesen",
         "Rank": "Rang",
         "Category": "Kategorie",
         "Equipment": "Ausrüstung",
@@ -259,10 +349,16 @@
         "Delete": "Entfernen",
         "Toggle": "Umschalten",
         "Open": "Öffnen",
+        "Skip": "Überspringen",
         "Cancel": "Abbrechen",
         "Submit": "OK",
         "Fighting": "Kämpfen",
         "Shooting": "Schießen",
-        "Athletics": "Athletik"
+        "Athletics": "Athletik",
+        "Unskilled": "Ungeübt",
+        "Untrained": "Ungeübt",
+        "OrListSeparator": " oder ",
+        "CopySWID": "Item-SWID kopieren",
+        "DragSeverity": "Ziehen, um {hindrance} ({severity}) hinzuzufügen"
     }
 }
