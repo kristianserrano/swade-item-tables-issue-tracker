@@ -233,7 +233,7 @@
         },
         "ImportSettings": {
             "Title": "Import Configuration",
-            "Content": "<p>Are you sure you want to overwrite the current configuration with the file's contents?</p>"
+            "Content": "<p>Are you sure you want to overwrite the current configuration with {quantity} UUID{s} in this file?</p>"
         },
         "PopUp": {
             "NoDescription": "No description provided."
@@ -242,7 +242,8 @@
             "SettingsImport": {
                 "Success": "SWADE Item Tables: Settings have been successfully imported.",
                 "Fail": "SWADE Item Tables: File is not a valid settings export.",
-                "IncorrectFileType": "SWADE Item Tables: File must be a plain text file."
+                "IncorrectFileType": "SWADE Item Tables: File must be a plain text file.",
+                "SelectAFile": "SWADE Item Tables: Please select a file to import."
             },
             "AddAncestry": "SWADE Item Tables: {name} must be given an ancestry first.",
             "DoesNotHaveHindrance": "SWADE Item Tables: {name} does not have this Hindrance.",
@@ -250,6 +251,7 @@
             "FlagsMigrated": "SWADE Item Tables: Flags successfully migrated.",
             "NoAttributePointsAvailable": "SWADE Item Tables: {name} does not have any attribute points available.",
             "NoSkillPointsAvailable": "SWADE Item Tables: {name} does not have any skill points available.",
+            "InvalidLinkedAttribute": "SWADE Item Tables: The {skill} skill does not have a valid linked attribute.",
             "NoEdgeSlotsAvailable": "SWADE Item Tables: {name} does not have any Edge slots available.",
             "CannotUpgradeSameSkill": "SWADE Item Tables: You cannot update the same skill twice in a single Advance.",
             "CannotIncreaseSkill": "SWADE Item Tables: You've already added or increased a skill below its linked attribute. You cannot increase a skill beyond its linked attribute for this Advance.",
