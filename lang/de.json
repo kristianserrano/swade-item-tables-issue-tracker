@@ -233,7 +233,7 @@
         },
         "ImportSettings": {
             "Title": "Konfiguration importieren",
-            "Content": "<p>Sicher, dass die aktuelle Konfiguration mit dem Inhalt der Datei überschrieben werden soll?</p>"
+            "Content": "<p>Sicher, dass die aktuelle Konfiguration mit {quantity} UUID{s} aus der Datei überschrieben werden soll?</p>"
         },
         "PopUp": {
             "NoDescription": "Keine Beschreibung verfügbar."
@@ -242,7 +242,8 @@
             "SettingsImport": {
                 "Success": "SWADE Item Tables: Einstellungen erfolgreich importiert.",
                 "Fail": "SWADE Item Tables: Datei ist kein gültiger Einstellungsexport.",
-                "IncorrectFileType": "SWADE Item Tables: Datei muss eine Plaintext-Datei sein."
+                "IncorrectFileType": "SWADE Item Tables: Datei muss eine Plaintext-Datei sein.",
+                "SelectAFile": "SWADE Item Tables: Bitte Datei zum Importieren wählen."
             },
             "AddAncestry": "SWADE Item Tables: {name} muss zuerst ein Volk erhalten.",
             "DoesNotHaveHindrance": "SWADE Item Tables: {name} verfügt nicht über dieses Handicap.",
@@ -250,6 +251,7 @@
             "FlagsMigrated": "SWADE Item Tables: Flags erfolgreich migriert.",
             "NoAttributePointsAvailable": "SWADE Item Tables: {name} verfügt über keine Attributpunkte.",
             "NoSkillPointsAvailable": "SWADE Item Tables: {name} verfügt über keine Fertigkeitspunkte.",
+            "InvalidLinkedAttribute": "SWADE Item Tables: Fertigkeit {skill} hat kein gültiges verbundenes Attribut.",
             "NoEdgeSlotsAvailable": "SWADE Item Tables: {name} verfügt über keine Talentplätze.",
             "CannotUpgradeSameSkill": "SWADE Item Tables: Eine Fertigkeit kann nicht mehrfach in einem Aufstieg gesteigert werden.",
             "CannotIncreaseSkill": "SWADE Item Tables: Fertigkeit bereits bis zum verbundene Attribut hinzugefügt oder erhöht. Fertigkeit kann für diesen Aufstieg nicht darüber hinaus gesteigert werden.",
