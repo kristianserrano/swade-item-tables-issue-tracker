@@ -3,6 +3,7 @@
         "Title": "SWADE Item Tables",
         "OpenItemTables": "Open Item Tables",
         "OpenCharacterSheet": "Open Character Sheet",
+        "OpenItemSheet": "Open Item Sheet",
         "ActorListings": "Actor Listings",
         "OpenActorListings": "Open Actor Listings",
         "ItemsList": {
@@ -115,7 +116,7 @@
                 "Type": "Type",
                 "AdvanceExtra": "Advance Extra",
                 "AddAdvance": "Add an Advance by dropping a skill, Edge, or Hindrance below, or by selecting an attribute to increase.",
-                "AttributeIncrease": {
+                "AttributeIncrease":{
                     "IncreaseAttribute": "Increase Attribute",
                     "SelectAttribute": "Select an attribute...",
                     "IncreasedAttribute": "Increase {attribute}",
@@ -151,24 +152,24 @@
         },
         "CraftingTable": {
             "Title": "Crafting Table",
-            "Instructions": "Drop an Item into this window to automatically create a masterwork copy of it. Select a bonus to enchant it.",
+            "Instructions": "<p>This tool allows you to drop weapons, armor, shields, and ammo to convert them to masterwork versions and add basic bonus Modifiers using the rules in the Fantasy Companion. More robust Modifier Effects can be added in the Item's Effects tab.</p>",
+            "AmmoEnchantmentNotSupported": "<p>Currently, the SWADE system does not support ammunition modifying weapon properties. If you'd like to see this in the future, please submit a request to the SWADE system developers.</p>",
+            "ItemName": "Item Name",
             "Bonus": {
                 "Label": "Bonus",
-                "SelectABonus": "--Select a Bonus--",
+                "SelectABonus": "-- Select a Bonus --",
                 "PlusOneArmor": "Armor +1",
                 "PlusTwoArmor": "Armor +2",
-                "PlusTwoArmorMinStr": "+2 and Min Str decreases one die type",
+                "PlusTwoArmorMinStr": "Armor +2 and Min Str decreases one die type",
                 "PlusOneParry": "+1 Parry",
                 "PlusOneParryMinStr": "+1 Parry and Min Str decreased by one",
-                "PlusOneFighting": "+1 Fighting",
-                "PlusTwoFighting": "+2 Fighting",
-                "PlusTwoFightingDamageDie": "+2 Fighting and damage die increases one step",
-                "PlusOneAthletics": "+1 Athletics",
-                "PlusTwoAthletics": "+2 Athletics",
-                "PlusTwoAthleticsDamageDie": "+2 Athletics and damage die increases one step",
-                "PlusOneShooting": "+1 Shooting",
-                "PlusTwoShooting": "+2 Shooting",
-                "PlusTwoShootingDamageDie": "+2 Shooting and damage die increases one step"
+                "PlusOne": "+1 {skillName}",
+                "PlusTwo": "+2 {skillName}",
+                "PlusTwoDamageDie": "+2 {skillName} and damage dice increase one step"
+            },
+            "Buttons": {
+                "MakeMasterworkCopy": "Make Masterwork Copy",
+                "AddBonus": "Add Bonus"
             }
         },
         "Mutator": {

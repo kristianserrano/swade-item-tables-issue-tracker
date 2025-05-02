@@ -151,7 +151,9 @@
         },
         "CraftingTable": {
             "Title": "Werkbank",
-            "Instructions": "Item in dieses Fenster ziehen, um automatisch eine Meisterwerk-Kopie anzulegen. Bonus wählen, um es zu verzaubern.",
+            "Instructions": "<p>This tool allows you to drop weapons, armor, shields, and ammo to convert them to masterwork versions and add basic bonus Modifiers using the rules in the Fantasy Companion. More robust Modifier Effects can be added in the Item's Effects tab.</p>",
+            "AmmoEnchantmentNotSupported": "<p>Currently, the SWADE system does not support ammunition modifying weapon properties. If you'd like to see this in the future, please submit a request to the SWADE system developers.</p>",
+            "ItemName": "Item Name",
             "Bonus": {
                 "Label": "Bonus",
                 "SelectABonus": "-- Bonus wählen --",
@@ -160,15 +162,13 @@
                 "PlusTwoArmorMinStr": "+2 und Min Stä um 1 Würfeltyp gesenkt",
                 "PlusOneParry": "+1 Parade",
                 "PlusOneParryMinStr": "+1 Parade und Min Stä um 1 Würfeltyp gesenkt",
-                "PlusOneFighting": "+1 Kämpfen",
-                "PlusTwoFighting": "+2 Kämpfen",
-                "PlusTwoFightingDamageDie": "+2 Kämpfen und Schadenswürfeltyp um eins gesteigert",
-                "PlusOneAthletics": "+1 Athletik",
-                "PlusTwoAthletics": "+2 Athletik",
-                "PlusTwoAthleticsDamageDie": "+2 Athletik und Schadenswürfeltyp um eins gesteigert",
-                "PlusOneShooting": "+1 Schießen",
-                "PlusTwoShooting": "+2 Schießen",
-                "PlusTwoShootingDamageDie": "+2 Schießen und Schadenswürfeltyp um eins gesteigert"
+                "PlusOne": "+1 {skillName}",
+                "PlusTwo": "+2 {skillName}",
+                "PlusTwoDamageDie": "+2 {skillName} and damage dice increase one step"
+            },
+            "Buttons": {
+                "MakeMasterworkCopy": "Make Masterwork Copy",
+                "AddBonus": "Add Bonus"
             }
         },
         "Mutator": {
