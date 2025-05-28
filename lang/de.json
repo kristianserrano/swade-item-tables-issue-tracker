@@ -151,9 +151,9 @@
         },
         "CraftingTable": {
             "Title": "Werkbank",
-            "Instructions": "<p>This tool allows you to drop weapons, armor, shields, and ammo to convert them to masterwork versions and add basic bonus Modifiers using the rules in the Fantasy Companion. More robust Modifier Effects can be added in the Item's Effects tab.</p>",
-            "AmmoEnchantmentNotSupported": "<p>Currently, the SWADE system does not support ammunition modifying weapon properties. If you'd like to see this in the future, please submit a request to the SWADE system developers.</p>",
-            "ItemName": "Item Name",
+            "Instructions": "<p>Hier können Waffen, Rüstung, Schilde und Munition reingezogen werden, um Meisterwerk-Versionen zu erschaffen und einfache Bonus-Modifikatoren nach den Regeln im Fantasy Companion hinzuzufügen. Komplexere Modifikatoren-Effekte können über den Effekte-Reiter von Gegenständen erstellt werden.</p>",
+            "AmmoEnchantmentNotSupported": "<p>SWADE unterstützt aktuell keine Veränderung der Waffeneigenschaften durch Munition. Wenn daran Interesse besteht, melde das den Systementwicklern!</p>",
+            "ItemName": "Item-Name",
             "Bonus": {
                 "Label": "Bonus",
                 "SelectABonus": "-- Bonus wählen --",
@@ -164,11 +164,11 @@
                 "PlusOneParryMinStr": "+1 Parade und Min Stä um 1 Würfeltyp gesenkt",
                 "PlusOne": "+1 {skillName}",
                 "PlusTwo": "+2 {skillName}",
-                "PlusTwoDamageDie": "+2 {skillName} and damage dice increase one step"
+                "PlusTwoDamageDie": "+2 {skillName} und Schaden um 1 Würfeltyp erhöht"
             },
             "Buttons": {
-                "MakeMasterworkCopy": "Make Masterwork Copy",
-                "AddBonus": "Add Bonus"
+                "MakeMasterworkCopy": "Meisterwerk-Kopie anlegen",
+                "AddBonus": "+ Bonus"
             }
         },
         "Mutator": {
